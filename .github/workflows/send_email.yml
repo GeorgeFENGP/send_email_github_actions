@@ -22,5 +22,5 @@ jobs:
           pip install pipenv 
           pipenv install
           pwd
-          pipenv run python src/send_email.py
+          pipenv run python src/SendEmail.py
           
