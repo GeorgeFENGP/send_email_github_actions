@@ -11,15 +11,15 @@ def sentemail():
     # 设置发件服务器端口号。注意，这里有SSL和非SSL两种形式，现在一般是SSL方式
     sender = 'nmecdzb@163.com'
     # 设置发件邮箱，一定要自己注册的邮箱
-    pwd = 'DKNDJGSNBUIZHFBC'
+    pwd = os.getenv("Email_PWD")
     # 设置发件邮箱的授权码密码，根据163邮箱提示，登录第三方邮件客户端需要授权码
     receiver = 'time4action@163.com'
     # 设置邮件接收人，可以是QQ邮箱
-    body = '<h1>你已成功打卡</h1><p>GeoFpyThon</p>'
+    body = '<h1>Hello World!</h1><p>GeoFpyThon</p>'
     # 设置邮件正文，这里是支持HTML的
     msg = MIMEText(body, 'html')
     # 设置正文为符合邮件格式的HTML内容
-    msg['subject'] = '打卡通知'
+    msg['subject'] = 'PushInfo'
     # 设置邮件标题
     msg['from'] = sender
     # 设置发送人
