@@ -1,4 +1,4 @@
-name: send email
+ame: send email
 
 on:
   workflow_dispatch:
@@ -24,8 +24,7 @@ jobs:
         run: |
             pip install setuptools==57.5.0
       - name: Install dependencies
-        run: |
-          
+        run: |          
           pip install -r requirements.txt
       - name: Send Email
         run: |
