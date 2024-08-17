@@ -20,13 +20,7 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: 3.7
-      - name: Check setuptools version
-        run: |
-            pip show setuptools
-      - name: Install or downgrade setuptools
-        run: |
-            pip install setuptools==57.5.0
-            pip install --upgrade pip
+      
       - name: Install dependencies
         run: |          
           pip install -r requirements.txt
