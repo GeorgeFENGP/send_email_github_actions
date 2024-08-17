@@ -26,6 +26,7 @@ jobs:
       - name: Install or downgrade setuptools
         run: |
             pip install setuptools==57.5.0
+            pip install --upgrade pip
       - name: Install dependencies
         run: |          
           pip install -r requirements.txt
