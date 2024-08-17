@@ -66,7 +66,7 @@ def sentemail(body):
     # 设置邮件正文，这里是支持HTML的
     msg = MIMEText(mybody, 'html')
     # 设置正文为符合邮件格式的HTML内容
-    msg['subject'] = 'PushInfo'
+    msg['subject'] = 'RSS Updates'
     # 设置邮件标题
     msg['from'] = sender
     # 设置发送人
